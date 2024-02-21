@@ -1,0 +1,9 @@
+/* src/styles/main.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+link[rel="icon"][type="image/svg+xml"] {
+  /* Add your styles here */
+  border-radius: 50%; /* Example: Make the favicon circular */
+  
+}
