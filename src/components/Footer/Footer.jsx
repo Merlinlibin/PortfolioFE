@@ -6,48 +6,48 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       {/* <!--===== FOOTER =====--> */}
-      <div class="" id="">
-        <ul class="flex items-center justify-center mb-4">
-          <li class="mx-4">
-            <Link to={"/"} class="text-whit">
+      <div className="" id="">
+        <ul className="flex items-center justify-center mb-4">
+          <li className="mx-4">
+            <Link to={"/"} className="text-whit">
               Home
             </Link>
           </li>
-          <li class="mx-4">
-            <Link to={"/About"} class="text-whit">
+          <li className="mx-4">
+            <Link to={"/About"} className="text-whit">
               About
             </Link>
           </li>
-          <li class="mx-4">
-            <Link to={"/Contact"} class="text-whit">
+          <li className="mx-4">
+            <Link to={"/Contact"} className="text-whit">
               Contact
             </Link>
           </li>
         </ul>
       </div>
-      <div class="footer__social flex justify-center items-center">
+      <div className="footer__social flex justify-center items-center">
         <a
           href="https://www.facebook.com/merlin.libin.1"
-          class="footer__icon"
+          className="footer__icon"
           target="_blank">
           <FaFacebook />
         </a>
         <a
           href="https://www.instagram.com/merlinlibin/"
-          class="footer__icon"
+          className="footer__icon"
           target="_blank">
           <FaInstagram />
         </a>
         <a
           href="https://twitter.com/merlinlibinmer1"
-          class="footer__icon "
+          className="footer__icon "
           target="_blank">
           <FaXTwitter />
         </a>
       </div>
-      <p class="footer__copy">&#169; 2024. All rigths reserved</p>
+      <p className="footer__copy">&#169; 2024. All rigths reserved</p>
     </footer>
   );
 }

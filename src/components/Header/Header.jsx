@@ -17,47 +17,53 @@ function Header() {
   
 
   return (
-    <header class="l-header">
+    <header className="l-header">
       {/* <!--===== HEADER =====--> */}
-      <nav class="nav bd-grid">
+      <nav className="nav bd-grid">
         <div>
-          <Link class="nav__logo" to={"/"}>
+          <Link className="nav__logo" to={"/"}>
             Portfolio
           </Link>
         </div>
 
-        <div class="nav__menu " id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <Link to={"/"} class={` nav__link`} onClick={linkAction}>
+        <div className="nav__menu " id="nav-menu">
+          <ul className="nav__list">
+            <li className="nav__item">
+              <Link to={"/"} className={` nav__link`} onClick={linkAction}>
                 Home
               </Link>
             </li>
-            <li class="nav__item">
-              <Link to={"/About"} class={` nav__link`} onClick={linkAction}>
+            <li className="nav__item">
+              <Link to={"/About"} className={` nav__link`} onClick={linkAction}>
                 About
               </Link>
             </li>
-            <li class="nav__item">
-              <Link to={"/Skills"} class={` nav__link`} onClick={linkAction}>
+            <li className="nav__item">
+              <Link
+                to={"/Skills"}
+                className={` nav__link`}
+                onClick={linkAction}>
                 Skills
               </Link>
             </li>
-            <li class="nav__item">
-              <Link to={"/Work"} class={` nav__link`} onClick={linkAction}>
+            <li className="nav__item">
+              <Link to={"/Work"} className={` nav__link`} onClick={linkAction}>
                 Work
               </Link>
             </li>
-            <li class="nav__item">
-              <Link to={"/Contact"} class={` nav__link`} onClick={linkAction}>
+            <li className="nav__item">
+              <Link
+                to={"/Contact"}
+                className={` nav__link`}
+                onClick={linkAction}>
                 Contact
               </Link>
             </li>
           </ul>
         </div>
 
-        <div class="nav__toggle" id="nav-toggle" onClick={linkAction}>
-          <i class="bx bx-menu"></i>
+        <div className="nav__toggle" id="nav-toggle" onClick={linkAction}>
+          <i className="bx bx-menu"></i>
         </div>
       </nav>
     </header>

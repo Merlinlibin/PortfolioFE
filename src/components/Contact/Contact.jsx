@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { Oval } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
+import AnimatedPage from "../AnimatedPage";
 
 
 
@@ -41,59 +42,66 @@ function Contact() {
     }
   };
   return (
-    <section class="contact section" id="contact">
-      {/* <!--===== CONTACT =====--> */}
-      <h2 class="section-title">Contact</h2>
+    <AnimatedPage>
+      <section className="contact section" id="contact">
+        {/* <!--===== CONTACT =====--> */}
+        <h2 className="section-title">Contact</h2>
 
-      <div class="contact__container bd-grid">
-        <form action="" class="contact__form text-center" onSubmit={Sendmail}>
-          <input
-            required
-            type="text"
-            name="name"
-            placeholder="Name"
-            class="contact__input"
-            onChange={(e) => setFormData({ ...formdata, name: e.target.value })}
-            value={formdata.name}
-          />
-          <input
-            required
-            type="email"
-            name="emai"
-            placeholder="Email"
-            class="contact__input"
-            onChange={(e) =>
-              setFormData({ ...formdata, email: e.target.value })
-            }
-            value={formdata.email}
-          />
-          <textarea
-            required
-            name="message"
-            id="message"
-            cols="30"
-            rows="7"
-            placeholder="Enter your message..."
-            className="contact__input"
-            onChange={(e) => {
-              setFormData({ ...formdata, message: e.target.value });
-            }}
-            value={formdata.message}></textarea>
+        <div className="contact__container bd-grid">
+          <form
+            action=""
+            className="contact__form text-center"
+            onSubmit={Sendmail}>
+            <input
+              required
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="contact__input"
+              onChange={(e) =>
+                setFormData({ ...formdata, name: e.target.value })
+              }
+              value={formdata.name}
+            />
+            <input
+              required
+              type="email"
+              name="emai"
+              placeholder="Email"
+              className="contact__input"
+              onChange={(e) =>
+                setFormData({ ...formdata, email: e.target.value })
+              }
+              value={formdata.email}
+            />
+            <textarea
+              required
+              name="message"
+              id="message"
+              cols="30"
+              rows="7"
+              placeholder="Enter your message..."
+              className="contact__input"
+              onChange={(e) => {
+                setFormData({ ...formdata, message: e.target.value });
+              }}
+              value={formdata.message}></textarea>
 
-          <button
-            type="submit"
-            class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm  text-center w-24 h-9">
-            {loading ? (
-              <div className="flex items-center justify-center">
-                <Oval color="white" height="20" width="20" />
-              </div>
-            ) : (
-              "send"
-            )}
-          </button>
-        </form>
-      </div>
-    </section>
+            <button
+              type="submit"
+              className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm  text-center w-24 h-9">
+              {loading ? (
+                <div className="flex items-center justify-center">
+                  <Oval color="white" height="20" width="20" />
+                </div>
+              ) : (
+                "send"
+              )}
+            </button>
+          </form>
+        </div>
+      </section>
+    </AnimatedPage>
   );
 }
 
