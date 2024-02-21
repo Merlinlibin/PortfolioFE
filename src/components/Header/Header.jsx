@@ -26,7 +26,7 @@ function Header() {
           </Link>
         </div>
 
-        <div class="nav__menu show" id="nav-menu">
+        <div class="nav__menu " id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
               <Link to={"/"} class={` nav__link`}>
