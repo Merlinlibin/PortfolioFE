@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   /*====================  MENU MOBILE ====================*/
-  const navLink = document.querySelectorAll(".nav__link");
+  
 
   function linkAction() {
     const navMenu = document.getElementById("nav-menu");
@@ -14,7 +14,7 @@ function Header() {
       navMenu.classList.add("show");
     }
   }
-  navLink.forEach((n) => n.addEventListener("click", linkAction));
+  
 
   return (
     <header class="l-header">
@@ -29,27 +29,27 @@ function Header() {
         <div class="nav__menu " id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <Link to={"/"} class={` nav__link`}>
+              <Link to={"/"} class={` nav__link`} onClick={linkAction}>
                 Home
               </Link>
             </li>
             <li class="nav__item">
-              <Link to={"/About"} class={` nav__link`}>
+              <Link to={"/About"} class={` nav__link`} onClick={linkAction}>
                 About
               </Link>
             </li>
             <li class="nav__item">
-              <Link to={"/Skills"} class={` nav__link`}>
+              <Link to={"/Skills"} class={` nav__link`} onClick={linkAction}>
                 Skills
               </Link>
             </li>
             <li class="nav__item">
-              <Link to={"/Work"} class={` nav__link`}>
+              <Link to={"/Work"} class={` nav__link`} onClick={linkAction}>
                 Work
               </Link>
             </li>
             <li class="nav__item">
-              <Link to={"/Contact"} class={` nav__link`}>
+              <Link to={"/Contact"} class={` nav__link`} onClick={linkAction}>
                 Contact
               </Link>
             </li>
