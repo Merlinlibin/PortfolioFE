@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AnimatedPage from "../AnimatedPage";
+import AnimatedPage2 from "../AnimatedPage2";
 
 function Home() {
   return (
-    <AnimatedPage>
-      <section className="home bd-grid " id="home">
-        {/* <!--===== HOME =====--> */}
+    <section className="home bd-grid " id="home">
+      {/* <!--===== HOME =====--> */}
+      <AnimatedPage2>
         <div className="home__data">
           <h1 className="home__title">
             Hi,
@@ -37,7 +38,8 @@ function Home() {
             </a>
           </div>
         </div>
-
+      </AnimatedPage2>
+      <AnimatedPage>
         <div className="home__img ">
           <svg className="home__blob" viewBox="0 0 479 467">
             <mask id="mask0" mask-type="alpha">
@@ -52,8 +54,8 @@ function Home() {
             </g>
           </svg>
         </div>
-      </section>
-    </AnimatedPage>
+      </AnimatedPage>
+    </section>
   );
 }
 

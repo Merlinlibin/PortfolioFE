@@ -6,16 +6,16 @@ import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import AnimatedPage from "../AnimatedPage";
-
+import AnimatedPage2 from "../AnimatedPage2";
 
 function Skills() {
   return (
-    <AnimatedPage>
-      <section className="skills section" id="skills">
-        {/* <!--===== SKILLS =====--> */}
-        <h2 className="section-title">Skills</h2>
+    <section className="skills section" id="skills">
+      {/* <!--===== SKILLS =====--> */}
+      <h2 className="section-title">Skills</h2>
 
-        <div className="skills__container bd-grid">
+      <div className="skills__container bd-grid">
+        <AnimatedPage2>
           <div className="flex align-center justify-center">
             <img
               src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1708493762/s37h8v4nqy8sm8bm3xby.png "
@@ -23,6 +23,8 @@ function Skills() {
               className="skills__img"
             />
           </div>
+        </AnimatedPage2>
+        <AnimatedPage>
           <div>
             <h1 className="skills__subtitle">Profesional Skills</h1>
 
@@ -87,9 +89,9 @@ function Skills() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </AnimatedPage>
+        </AnimatedPage>
+      </div>
+    </section>
   );
 }
 
