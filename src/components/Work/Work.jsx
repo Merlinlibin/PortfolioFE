@@ -1,15 +1,16 @@
 import React from "react";
 import AnimatedPage from "../AnimatedPage";
+import AnimatedPage2 from "../AnimatedPage2";
 
 function Work() {
   return (
-    <AnimatedPage>
-      <section className="work section" id="work">
-        {/* <!--===== WORK =====--> */}
-        <h2 className="section-title">Work</h2>
+    <section className="work section" id="work">
+      {/* <!--===== WORK =====--> */}
+      <h2 className="section-title">Work</h2>
 
-        <div className="work__container bd-grid  gap-y-8 gap-x-8">
-          <div className="lg:flex justify-around items-center">
+      <div className="work__container bd-grid  gap-y-8 gap-x-8">
+        <div className="lg:flex justify-around items-center">
+          <AnimatedPage2>
             <div className="text-center">
               <a
                 href="https://www.mbitindia.com/index.html"
@@ -22,13 +23,17 @@ function Work() {
                 />
               </a>
             </div>
+          </AnimatedPage2>
+          <AnimatedPage>
             <div className="m-3 text-center">
               <h1 className="text-4xl font-semibold m-3">Software Engineer</h1>
               <p>(2022-2023)</p>
             </div>
-          </div>
+          </AnimatedPage>
+        </div>
 
-          <div className="lg:flex justify-around items-center">
+        <div className="lg:flex justify-around items-center">
+          <AnimatedPage2>
             <div>
               <a
                 href="https://www.sparkinfratech.com/"
@@ -41,14 +46,16 @@ function Work() {
                 />
               </a>
             </div>
+          </AnimatedPage2>
+          <AnimatedPage>
             <div className="m-3 text-center">
               <h1 className="text-4xl font-semibold m-3">Junior Engineer</h1>
               <p>(2018-2021)</p>
             </div>
-          </div>
+          </AnimatedPage>
         </div>
-      </section>
-    </AnimatedPage>
+      </div>
+    </section>
   );
 }
 
