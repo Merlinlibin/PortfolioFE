@@ -37,7 +37,7 @@ function Work() {
             <div>
               <a
                 href="https://www.sparkinfratech.com/"
-                className="work__img"
+                className="work__img w-40"
                 target="_blank">
                 <img
                   src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1708600786/ajehzyprmikmjn4adof8.jpg"

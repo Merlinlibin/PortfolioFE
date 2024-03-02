@@ -17,7 +17,7 @@ function Home() {
           </h1>
 
           <a
-            href="https://drive.google.com/file/d/1uKKxWmiCPvL9yePo9q7YXYSrGPbxoRzw/view?usp=sharing"
+            href="https://drive.google.com/file/d/1t-iK7pF_z6rtlyxd8KX3B4nj6AJphsGp/view?usp=drive_link "
             target="_blank"
             type="button"
             className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
