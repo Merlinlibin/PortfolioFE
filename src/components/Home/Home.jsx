@@ -36,6 +36,13 @@ function Home() {
               target="_blank">
               <i className="bx bxl-github"></i>
             </a>
+            <a
+              href="https://wa.me/919578232626/"
+              className="home__social-icon text-bold"
+              text="Hi, Can you tell more about  yourself?"
+              target="_blank">
+              <i className="bx bxl-whatsapp"></i>
+            </a>
           </div>
         </div>
       </AnimatedPage2>
