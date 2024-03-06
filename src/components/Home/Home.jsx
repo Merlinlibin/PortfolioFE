@@ -37,9 +37,8 @@ function Home() {
               <i className="bx bxl-github"></i>
             </a>
             <a
-              href="https://wa.me/919578232626/"
+              href="https://wa.me/919578232626/?text=Hi,%20Can%20you%20tell%20more%20about%20yourself?"
               className="home__social-icon text-bold"
-              content="Hi, Can you tell more about  yourself?"
               target="_blank">
               <i className="bx bxl-whatsapp"></i>
             </a>
