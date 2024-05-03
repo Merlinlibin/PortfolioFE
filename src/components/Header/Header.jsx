@@ -47,8 +47,16 @@ function Header() {
               </Link>
             </li>
             <li className="nav__item">
+              <Link
+                to={"/Projects"}
+                className={` nav__link`}
+                onClick={linkAction}>
+                Projects
+              </Link>
+            </li>
+            <li className="nav__item">
               <Link to={"/Work"} className={` nav__link`} onClick={linkAction}>
-                Work
+                Experience
               </Link>
             </li>
             <li className="nav__item">

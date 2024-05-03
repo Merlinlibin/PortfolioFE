@@ -4,7 +4,6 @@ import {
   Route,
   BrowserRouter as Router,
   Routes,
-  useLocation,
 } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -15,8 +14,20 @@ import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
 import { ToastContainer } from "react-toastify";
 import { AnimatePresence } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Projects from "./components/Projects/Projects";
 
 function App() {
+  AOS.init({
+    offset: 120, 
+    delay: 0, 
+    duration: 1000, 
+    easing: "ease", 
+    once: false, 
+    mirror: false, 
+    anchorPlacement: "top-bottom",
+  });
   return (
     <Router>
       <div className="mx-1 lg:mx-2">
@@ -28,6 +39,7 @@ function App() {
             <Route path="/Contact" element={<Contact />}></Route>
             <Route path="/Skills" element={<Skills />}></Route>
             <Route path="/Work" element={<Work />}></Route>
+            <Route path="/Projects" element={<Projects />}></Route>
           </Routes>
         </AnimatePresence>
       </div>
