@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 
 function Projects() {
   return (
-    <section className="about section h-4/5" id="project">
+    <section className="about section h-4/5 z-10" id="project">
       {/* <!--===== PROJECT =====--> */}
       <h2 className="section-title">Projects</h2>
 

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer z-20">
       {/* <!--===== FOOTER =====--> */}
       <div className="" id="">
         <ul className="flex items-center justify-center mb-4">

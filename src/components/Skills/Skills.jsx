@@ -8,7 +8,7 @@ import { SiMongodb } from "react-icons/si";
 
 function Skills() {
   return (
-    <section className="skills section" id="skills">
+    <section className="skills section z-10" id="skills">
       {/* <!--===== SKILLS =====--> */}
       <h2 className="section-title">Skills</h2>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section className="about section h-4/5" id="about">
+    <section className="about section h-4/5 z-10" id="about">
       {/* <!--===== ABOUT =====--> */}
       <h2 className="section-title">About</h2>
 

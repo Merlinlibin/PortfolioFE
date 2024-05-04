@@ -2,7 +2,7 @@ import React from "react";
 
 function Work() {
   return (
-    <section className="work section" id="work">
+    <section className="work section z-10 " id="work">
       {/* <!--===== WORK =====--> */}
       <h2 className="section-title mb-5">Work</h2>
 

@@ -17,7 +17,7 @@ function Header() {
   
 
   return (
-    <header className="l-header">
+    <header className="l-header z-20">
       {/* <!--===== HEADER =====--> */}
       <nav className="nav bd-grid">
         <div>

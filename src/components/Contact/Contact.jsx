@@ -41,7 +41,7 @@ function Contact() {
     }
   };
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section z-10" id="contact">
       {/* <!--===== CONTACT =====--> */}
       <h2 className="section-title">Contact</h2>
 
