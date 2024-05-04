@@ -33,9 +33,12 @@ function Home() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Web Developer"],
-      typeSpeed: 160,
-      loop: true,
+      strings: ["Web Developer", "Software Tester"],
+      typeSpeed: 100,
+      backSpeed: 20,
+      backDelay: 100,
+      startDelay: 0,
+      loop:true,
     });
 
     return () => {
@@ -52,7 +55,7 @@ function Home() {
             Hi,
             <br />
             I'am <span className="home__title-color">Merlin Libin</span>
-            <br /> <span ref={el}>Web Developer</span>
+            <br /> <span ref={el} className="z-20"></span>
           </h1>
 
           <a
