@@ -28,7 +28,8 @@
     "react-router-dom": "^6.22.1",
     "react-toastify": "^10.0.4",
     "tailwind-merge": "^2.3.0",
-    "typed.js": "^2.1.0"
+    "typed.js": "^2.1.0",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

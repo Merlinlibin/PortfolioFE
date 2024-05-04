@@ -17,8 +17,36 @@ import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Projects from "./components/Projects/Projects";
+import  { useState, useEffect,useRef } from "react";
+import BIRDS from "vanta/dist/vanta.birds.min";
+
 
 function App() {
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const myRef = useRef(null);
+  useEffect(() => {
+   
+    if (!vantaEffect) {
+      setVantaEffect(
+        BIRDS({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundColor: 0xdedede,
+          color1: 0x4dff,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+     
+    };
+  }, [vantaEffect]);
   AOS.init({
     offset: 120, 
     delay: 0, 
@@ -30,7 +58,7 @@ function App() {
   });
   return (
     <Router>
-      <div className="mx-1 lg:mx-2">
+      <div className="px-1 lg:px-2 butterfly" ref={myRef}>
         <Header />
         <AnimatePresence>
           <Routes>

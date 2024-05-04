@@ -8,17 +8,19 @@ function Projects() {
       {/* <!--===== PROJECT =====--> */}
       <h2 className="section-title">Projects</h2>
 
-      <div className="mx-7 lg:grid grid-rows-3 grid-flow-col gap-4 items-center justify-items-center ">
+      <div className="mx-7 grid grid-rows-3 lg:grid-cols-2 gap-4 items-center justify-items-center ">
         <div
           class="max-w-sm roundedcard overflow-hidden  my-11 "
           data-aos="zoom-in-down">
-          <img
-            class="w-full image-p"
-            src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/cghup9xgk0esj5qm83di.png"
-            alt="Sunset in the mountains"
-          />
+          <div className="overflow-hidden">
+            <img
+              class="w-full image-p"
+              src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/cghup9xgk0esj5qm83di.png"
+              alt="Sunset in the mountains"
+            />
+          </div>
           <div class="px-3 pt-3">
-            <div class="font-bold text-xl mb-2 text-center">
+            <div class="font-bold text-xl mb-2 text-center ">
               NUXZOX Shopping Platform
             </div>
           </div>
@@ -56,11 +58,13 @@ function Projects() {
         <div
           class="max-w-sm roundedcard overflow-hidden my-11"
           data-aos="zoom-in-down">
-          <img
-            class="w-full image-p"
-            src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/uyrjp4s3zmezjf4ttvdr.png"
-            alt="Sunset in the mountains"
-          />
+          <div className="overflow-hidden">
+            <img
+              class="w-full image-p"
+              src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/uyrjp4s3zmezjf4ttvdr.png"
+              alt="Sunset in the mountains"
+            />
+          </div>
           <div class="px-3 pt-3 pb-0">
             <div class="font-bold text-xl mb-2 text-center">ToDo App</div>
           </div>
@@ -93,11 +97,13 @@ function Projects() {
         <div
           class="max-w-sm roundedcard overflow-hidden my-11"
           data-aos="zoom-in-down">
-          <img
-            class="w-full image-p"
-            src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/ru4cvu2uxtpkqvcvawiw.png"
-            alt="Sunset in the mountains"
-          />
+          <div className="overflow-hidden">
+            <img
+              class="w-full image-p"
+              src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/ru4cvu2uxtpkqvcvawiw.png"
+              alt="Sunset in the mountains"
+            />
+          </div>
           <div class="px-3 py-3 pb-0">
             <div class="font-bold text-xl mb-2 text-center">
               Image Finder App
@@ -134,11 +140,13 @@ function Projects() {
         <div
           class="max-w-sm roundedcard overflow-hidden my-11"
           data-aos="zoom-in-down">
-          <img
-            class="w-full image-p"
-            src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/zccdymq0d2jjhsbm6f4x.png"
-            alt="Sunset in the mountains"
-          />
+          <div className="overflow-hidden">
+            <img
+              class="w-full image-p"
+              src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/zccdymq0d2jjhsbm6f4x.png"
+              alt="Sunset in the mountains"
+            />
+          </div>
           <div class="px-3 py-3 pb-0">
             <div class="font-bold text-xl mb-2 text-center">
               Lets Connect Chat App
@@ -177,11 +185,13 @@ function Projects() {
         <div
           class="max-w-sm roundedcard overflow-hidden my-11"
           data-aos="zoom-in-down">
-          <img
-            class="w-full image-p"
-            src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/jnfx3pvaott1rgibffqj.png"
-            alt="Sunset in the mountains"
-          />
+          <div className="overflow-hidden">
+            <img
+              class="w-full image-p"
+              src="https://res.cloudinary.com/dewfjhlh5/image/upload/v1714751669/jnfx3pvaott1rgibffqj.png"
+              alt="Sunset in the mountains"
+            />
+          </div>
           <div class="px-3 py-3 pb-0">
             <div class="font-bold text-xl mb-2 text-center">Spotify Clone</div>
           </div>

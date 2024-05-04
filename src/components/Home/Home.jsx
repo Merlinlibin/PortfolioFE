@@ -1,20 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import Typed from "typed.js";
 
 function Home() {
   const el = useRef(null);
-   useEffect(() => {
-     const typed = new Typed(el.current, {
-       strings: ["Web Developer"],
-       typeSpeed: 170,
-       loop:true,
-     });
 
-     return () => {
-       
-       typed.destroy();
-     };
-   }, []);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Web Developer"],
+      typeSpeed: 80,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <section className="home bd-grid " id="home">
       {/* <!--===== HOME =====--> */}
