@@ -50,11 +50,11 @@ function Home() {
       <section className="home bd-grid z-10" id="home">
         {/* <!--===== HOME =====--> */}
 
-        <div className="home__data" data-aos="fade-right">
+        <div className="home__data " data-aos="fade-right">
           <h1 className="home__title">
             Hi,
             <br />
-            I'am <span className="home__title-color">Merlin Libin</span>
+            I'am &nbsp;<span className="home__title-color">Merlin Libin</span>
             <br /> <span ref={el} className="z-20"></span>
           </h1>
 
