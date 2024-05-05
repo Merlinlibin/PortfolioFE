@@ -29,7 +29,7 @@ function About() {
         </div>
       </div>
       <div data-aos="fade-down-left" className="container mx-auto mt-14">
-        <div className="mx-4">
+        <div className="mx-4 lg:mx-16">
           <h1 className="about__subtitle text-3xl">
             <span className="home__title-color">
               MERN STACK DEVELOPMENT(2023)
@@ -44,7 +44,7 @@ function About() {
         </div>
       </div>
       <div data-aos="fade-down-left" className="container mx-auto mt-14">
-        <div className="mx-4">
+        <div className="mx-4 lg:mx-16">
           <h1 className="about__subtitle text-3xl">
             <span className="home__title-color">
               BACHELOR OF ENGINEERING(2018)
